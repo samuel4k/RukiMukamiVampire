@@ -637,7 +637,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", " Mortals won't sleep !")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Vampire won't sleep!](https://telegra.ph/file/b74bbe7d711b2a637a6eb.mp4)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
